@@ -1,0 +1,12 @@
+clc;
+a=[1 -0.97];
+%freqz(a);
+[h,w]=freqz(a);
+subplot(211);
+plot(w/pi,abs(h));
+xlabel('Normalized Frequency \omega/\pi ');
+ylabel('Amplitude');
+subplot(212);
+plot(w/pi,angle(h));
+xlabel('Normalized Frequency \omega/\pi ');
+ylabel('Phase in rad');
